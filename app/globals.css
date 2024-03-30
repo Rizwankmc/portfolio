@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-section .p-image{
+  max-width: 90px;
+  width: 100%;
+  margin-right: 15px;
+}
+.projects-section .p-image img{
+  height: 55px;
+  width: fit-content;
+  object-fit: contain;
+}
+.projects-section .p-detail{
+  width: calc(100% - 165px);
+  padding:  0px !important;
+}
+.projects-section a{
+  width: 50%;
+}
+.projects-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.p-image.lv-logo img {
+  height: 50px;
+}
+.rblx-logo img{
+  height: 40px !important;
+}
+.ref-logo img{
+  height: 45px !important;
+}
+.projects-section .flex-col{
+  width: 100%;
+}
+.logo-img{
+  position: absolute;
+    top: 8px;
+    height: 83px;
+    object-fit: contain;
+}
