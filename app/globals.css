@@ -7,43 +7,218 @@
   font-family: "Poppins", sans-serif;
 }
 
-.projects-section .p-image{
-  max-width: 90px;
+a {
+  text-decoration: none !important;
+}
+
+.p-image img {
+  height: 160px;
   width: 100%;
-  margin-right: 15px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-.projects-section .p-image img{
-  height: 55px;
-  width: fit-content;
-  object-fit: contain;
-}
-.projects-section .p-detail{
-  width: calc(100% - 165px);
-  padding:  0px !important;
-}
-.projects-section a{
+
+.projects-section a {
   width: 50%;
 }
-.projects-section{
+
+.projects-section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.p-image.lv-logo img {
-  height: 50px;
-}
-.rblx-logo img{
-  height: 40px !important;
-}
-.ref-logo img{
-  height: 45px !important;
-}
-.projects-section .flex-col{
+
+.projects-section .flex-col {
   width: 100%;
 }
-.logo-img{
+
+.logo-img {
   position: absolute;
-    top: 8px;
-    height: 83px;
-    object-fit: contain;
+  top: 8px;
+  height: 83px;
+  object-fit: contain;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.skills-title h1 {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 10px;
+  min-width: 175px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.skills-title h1:hover {
+  background: white;
+  color: black;
+  transition: all ease 0.3s;
+}
+
+.view-projects {
+  background: white;
+  color: black;
+  border-radius: 1.5rem;
+  padding: 12px 18px;
+  min-width: 160px;
+  border: 1px solid white;
+}
+
+.view-projects:hover {
+  transition: all ease .3s;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-section button {
+  min-width: 160px;
+  height: 49.46px;
+  padding: 5px !important;
+}
+
+.skills-list {
+  list-style: square !important;
+  padding-left: 20px;
+}
+
+.skill-heading {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 125px;
+}
+
+.exp-bg {
+  background: #2222228a;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px dashed #2d2d2d;
+  margin-bottom: 40px;
+}
+
+.Company-title {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.company-date {
+  font-size: 14px;
+}
+
+.exp-bg ul li {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.exp-bg ul {
+  padding-left: 10px;
+  list-style: disc;
+  padding-top: 25px;
+}
+
+.company-pos {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-card {
+  width: calc(33% - 12px) !important;
+  background-color: #1a1a1a;
+  z-index: 9999999;
+  border: 1px dashed #2d2d2d;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+img:hover {
+  transition: all ease 1s;
+  transform: scale(1.2);
+}
+
+.p-image {
+  overflow: hidden;
+}
+
+section#skills {
+  max-width: 80%;
+  width: 100%;
+  margin: 100px auto;
+}
+
+section#projects,
+section#experience {
+  max-width: 80%;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.skills-btn {
+  border: 1px dashed #2d2d2d !important;
+  background-color: #1a1a1a !important;
+}
+
+.project-details .nav.nav-tabs {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0px auto;
+  margin-bottom: 50px !important;
+  background: #292929;
+  border-radius: 5px;
+
+}
+
+.project-details .nav-tabs .nav-link.active,
+.project-details .nav-tabs .nav-item.show .nav-link {
+  background: #ffffff;
+  color: #000000;
+  border: none !important;
+}
+
+.project-details .nav-tabs .nav-link {
+  color: white;
+  width: 180px;
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 45px;
+}
+
+.project-details .nav-tabs .nav-link:hover,
+.project-details .nav-tabs .nav-link:active {
+  border: none !important;
+}
+
+.project-details .nav-tabs li:nth-child(2) .nav-link.active {
+  border-top-left-radius: 0px !important;
+}
+
+.project-details .nav-tabs li:nth-child(1) .nav-link.active {
+  border-top-right-radius: 0px !important;
+}
+.nav-btn{
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-size: 14px;
 }

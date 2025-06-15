@@ -20,10 +20,12 @@ const Navbar = () => {
           />
         </a>
 
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-5 items-center">
+          <a href="#skills" className="btn-primary text-md text-gray-200 nav-btn">Skills</a>
+          <a href="#projects" className="btn-primary text-md text-gray-200 nav-btn">Projects</a>
           <div
             onClick={() => window.open("mailto:rizwanssv@gmail.com")}
-            className=" z-[1] bg-transparent  padding-10 cursor-pointer bg-black hover:bg-[#2E2E2E] rounded-xl  text-white  py-2 px-5"
+            className=" z-[1] bg-transparent  padding-10 cursor-pointer bg-black bg-[#2E2E2E] rounded-xl nav-btn"
           >
             Contact
           </div>

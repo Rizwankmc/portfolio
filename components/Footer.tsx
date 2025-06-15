@@ -5,8 +5,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" container mx-auto 2xl pt-[50px] pb-8 ">
-      <div className="pb-10 justify-center flex ">
+    <div className="mx-auto 2xl pt-[50px] pb-8 ">
+      <div className="pb-0 justify-center flex ">
         {Social_Icons.map((social) => {
           return (
             <Link
@@ -20,7 +20,7 @@ const Footer = () => {
                 src={social.image}
                 height={30}
                 width={30}
-                className="mx-5"
+                className="mx-3"
                 alt={social.alt}
               />
             </Link>
