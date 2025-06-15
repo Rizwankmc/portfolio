@@ -6,6 +6,87 @@ import Tabs from 'react-bootstrap/Tabs';
 import Image from "next/image";
 import Link from "next/link";
 
+const projects = [
+  {
+    name: "Weje",
+    image: "/bg.jpeg",
+    description:"Defi Gaming platform with the real-time video chat and game play and Sports bet tickets.",
+    link: "https://weje.com/",
+    type: "game"
+  },
+  {
+    name: "Cloud Poker Night",
+    image: "/bg.jpeg",
+    description:" Developed Poker multiplayer game with Video call, recordings, and rail participant. advantage of running multiple table at time per events.",
+    link: "https://cloudpokernight.com/",
+    type: "game"
+  },
+  {
+    name: "Scrooge Casino",
+    image: "/bg.jpeg",
+    description:"Developed with MERN stack and used crypto payments on its marketplace, Integrated multiple third-party games.",
+    link: "https://scrooge.casino/",
+    type: "game"
+  },
+  {
+    name: "Noogata",
+    image: "/bg.jpeg",
+    description: "Managed and worked on the fortend of different micro frontend and services.",
+    link: "https://noogata.com/",
+    type: "frontend"
+  },
+  {
+    name: "Referrizer",
+    image: "/bg.jpeg",
+    description: "Design the strapi structure and API that is utilized by Gatsby.",
+    link: "https://referrizer.com/",
+    type: "frontend"
+
+  },
+  {
+    name: "RBLX Pool",
+    image: "/bg.jpeg",
+    description: "Gaming and betting platform build with MERN stack and uses Robux ar currency to bet.",
+    link: "https://rblxpool.com/",
+    type: "game"
+  },
+  {
+    name: "Roulette-HTML",
+    image: "/bg.jpeg",
+    description: "Simple Roulette game build with HTML, CSS, and JS.",
+    link: "https://roulette-indigame.netlify.app/",
+    type: "game"
+  },
+  {
+    name: "Remy Money",
+    image: "/bg.jpeg",
+    description: "A simple client onboarding process for the Remy Money app.",
+    link: "https://remymoney.com/",
+    type: "frotend"
+  },
+  {
+    name: "Population Network",
+    image: "/bg.jpeg",
+    description: "A data collection and  crypto-wallet management platform.",
+    link: "https://population-network.netlify.app/",
+    type: "frotend"
+  },
+  {
+    name: "BetsNext",
+    image: "/bg.jpeg",
+    description: "A casino gambling platform where user can make bets on different games.",
+    link: "https://betsnext.com/",
+    type: "game"
+  },
+  {
+    name: "Day of Duel",
+    image: "/bg.jpeg",
+    description: "A gaming platform with level matchmaking and different games worked on Ping pong and winter games.",
+    link: "https://staging.dayofduel.com/",
+    type: "game"
+  }
+];
+
 const Projects = () => {
   return (
     <section id="projects" className="project-details">
@@ -23,292 +104,58 @@ const Projects = () => {
         <Tab eventKey="All Projects" title="All Projects">
           <div className="mx-auto 2xl projects-section ">
             <div className="project-row">
-              <Link
-                href="https://cloudpokernight.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="WebHR Project"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Cloud Poker Night</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Developed Poker multiplayer game with Video call, recordings, and rail participant. advantage of running multiple table at time per events
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://scrooge.casino/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="HireSide"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Scrooge Casino</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Developed with MERN stack and used crypto payments on its marketplace, Integrated multiple third-party games.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://noogata.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="VergeSystems"
-                    />
-                  </div>
-                  <div className=" p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">
-                      Noogata
-                    </p>
-                    <p className="text-gray-500 text-[10px]">
-                      Managed and worked on the fortend of different micro frontend and services.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://business.referrizer.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image ref-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Referrizer</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Design the strapi structure and API that is utilized by Gatsby.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://las-vegas.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image lv-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Las-vegas</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Gaming Platform with Social Media touch build with MERN stack and PWA.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://rblxpool.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image rblx-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">RBLX Pool</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Gaming and betting platform build with MERN stack and uses Robux ar currency to bet.
-                    </p>
-                  </div>
-                </div>
-              </Link>
+              {projects.map((project) => (
+                   <Link
+                   href={project.link}
+                   rel="noopener noreferrer"
+                   target="_blank"
+                   className="z-[1] project-card"
+                 >
+                   <div className="flex-column flex">
+                     <div className="p-image">
+                       <Image
+                         src={project.image}
+                         height={150}
+                         width={150}
+                         alt={project.name}
+                       />
+                     </div>
+                     <div className="p-3 p-detail">
+                       <p className="text-white font-semibold text-xl">{project.name}</p>
+                       <p className="text-gray-500 text-[10px]">{project.description}</p>
+                     </div>
+                   </div>
+                 </Link>
+              ))}
             </div>
           </div>
         </Tab>
         <Tab eventKey="Games" title="Games">
           <div className=" mx-auto 2xl projects-section ">
             <div className="project-row">
-              <Link
-                href="https://cloudpokernight.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="WebHR Project"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Cloud Poker Night</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Developed Poker multiplayer game with Video call, recordings, and rail participant. advantage of running multiple table at time per events
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://scrooge.casino/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="HireSide"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Scrooge Casino</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Developed with MERN stack and used crypto payments on its marketplace, Integrated multiple third-party games.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://noogata.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="VergeSystems"
-                    />
-                  </div>
-                  <div className=" p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">
-                      Noogata
-                    </p>
-                    <p className="text-gray-500 text-[10px]">
-                      Managed and worked on the fortend of different micro frontend and services.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://business.referrizer.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image ref-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Referrizer</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Design the strapi structure and API that is utilized by Gatsby.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://las-vegas.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image lv-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">Las-vegas</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Gaming Platform with Social Media touch build with MERN stack and PWA.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="https://rblxpool.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1] project-card"
-              >
-                <div className="flex-column flex">
-                  <div className="p-image rblx-logo">
-                    <Image
-                      src="/bg.jpeg"
-                      height={150}
-                      width={150}
-                      alt="Payoasis"
-                    />
-                  </div>
-                  <div className="p-3 p-detail">
-                    <p className="text-white font-semibold text-xl">RBLX Pool</p>
-                    <p className="text-gray-500 text-[10px]">
-                      Gaming and betting platform build with MERN stack and uses Robux ar currency to bet.
-                    </p>
-                  </div>
-                </div>
-              </Link>
+              {projects.filter(p => p.type === "game").map((project) => (
+                   <Link
+                   href={project.link}
+                   rel="noopener noreferrer"
+                   target="_blank"
+                   className="z-[1] project-card"
+                 >
+                   <div className="flex-column flex">
+                     <div className="p-image">
+                       <Image
+                         src={project.image}
+                         height={150}
+                         width={150}
+                         alt={project.name}
+                       />
+                     </div>
+                     <div className="p-3 p-detail">
+                       <p className="text-white font-semibold text-xl">{project.name}</p>
+                       <p className="text-gray-500 text-[10px]">{project.description}</p>
+                     </div>
+                   </div>
+                 </Link>
+              ))}
             </div>
           </div>
         </Tab>
