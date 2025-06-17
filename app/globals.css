@@ -261,7 +261,8 @@ section#about {
   }
 
   section#projects,
-  section#experience {
+  section#experience,
+  section#about {
     max-width: 100%;
     padding: 0px 20px;
   }
@@ -273,4 +274,30 @@ section#about {
   .project-row {
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 420px) {
+  section#about h1, section#experience h1, section#projects h1{
+    font-size: 35px;
+  }
+  .project-details .nav-tabs .nav-link{
+    width: 120px;
+  }
+  section#projects, section#experience{
+    padding: 0px 10px;
+  }
+  .project-card{
+    width: 100% !important;
+  }
+  section#skills, section#about{
+    padding: 0px 10px;
+  }
+  .skills-list li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.skills-list{
+  padding-left: 0;
+}
 }
