@@ -9,35 +9,35 @@ import Link from "next/link";
 const projects = [
   {
     name: "Weje",
-    image: "/bg.jpeg",
+    image: "/lv.png",
     description:"Defi Gaming platform with the real-time video chat and game play and Sports bet tickets.",
     link: "https://weje.com/",
     type: "game"
   },
   {
     name: "Cloud Poker Night",
-    image: "/bg.jpeg",
+    image: "/cloudPoker.png",
     description:" Developed Poker multiplayer game with Video call, recordings, and rail participant. advantage of running multiple table at time per events.",
     link: "https://cloudpokernight.com/",
     type: "game"
   },
   {
     name: "Scrooge Casino",
-    image: "/bg.jpeg",
+    image: "/scrooge.png",
     description:"Developed with MERN stack and used crypto payments on its marketplace, Integrated multiple third-party games.",
     link: "https://scrooge.casino/",
     type: "game"
   },
   {
     name: "Noogata",
-    image: "/bg.jpeg",
+    image: "/noogataa.png",
     description: "Managed and worked on the fortend of different micro frontend and services.",
     link: "https://noogata.com/",
     type: "frontend"
   },
   {
     name: "Referrizer",
-    image: "/bg.jpeg",
+    image: "/referrizerr.png",
     description: "Design the strapi structure and API that is utilized by Gatsby.",
     link: "https://referrizer.com/",
     type: "frontend"
@@ -52,35 +52,35 @@ const projects = [
   },
   {
     name: "Roulette-HTML",
-    image: "/bg.jpeg",
+    image: "/roulette.png",
     description: "Simple Roulette game build with HTML, CSS, and JS.",
     link: "https://roulette-indigame.netlify.app/",
     type: "game"
   },
   {
     name: "Remy Money",
-    image: "/bg.jpeg",
+    image: "/remmy.png",
     description: "A simple client onboarding process for the Remy Money app.",
     link: "https://remymoney.com/",
     type: "frotend"
   },
   {
     name: "Population Network",
-    image: "/bg.jpeg",
+    image: "/population.png",
     description: "A data collection and  crypto-wallet management platform.",
     link: "https://population-network.netlify.app/",
     type: "frotend"
   },
   {
     name: "BetsNext",
-    image: "/bg.jpeg",
+    image: "/bets.png",
     description: "A casino gambling platform where user can make bets on different games.",
     link: "https://betsnext.com/",
     type: "game"
   },
   {
     name: "Day of Duel",
-    image: "/bg.jpeg",
+    image: "/dod.png",
     description: "A gaming platform with level matchmaking and different games worked on Ping pong and winter games.",
     link: "https://staging.dayofduel.com/",
     type: "game"

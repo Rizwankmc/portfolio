@@ -163,7 +163,8 @@ section#skills {
 }
 
 section#projects,
-section#experience {
+section#experience,
+section#about {
   max-width: 80%;
   margin: 0px auto;
   width: 100%;
@@ -213,7 +214,8 @@ section#experience {
 .project-details .nav-tabs li:nth-child(1) .nav-link.active {
   border-top-right-radius: 0px !important;
 }
-.nav-btn{
+
+.nav-btn {
   width: 60px;
   height: 40px;
   display: flex;
@@ -221,4 +223,54 @@ section#experience {
   align-items: center;
   color: white !important;
   font-size: 14px;
+}
+
+.header-right-section {
+  gap: 3rem;
+}
+
+.header {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.skills-details h2{
+  font-size: 16px;
+}
+.skills-details{
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .header-right-section {
+    gap: 12px !important;
+  }
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  section#skills {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px auto 50px;
+    padding: 0px 20px;
+  }
+
+  .skills-btn {
+    font-size: 14px;
+  }
+
+  section#projects,
+  section#experience {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+
+  .project-card {
+    width: 90% !important;
+  }
+
+  .project-row {
+    justify-content: center;
+  }
 }
